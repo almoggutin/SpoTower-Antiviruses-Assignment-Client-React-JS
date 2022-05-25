@@ -1,0 +1,16 @@
+@use '../../styles/base' as *;
+
+.custom-btn {
+    border: none;
+    background-color: $orange;
+    color: $white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:disabled {
+        background-color: $gray;
+        cursor: not-allowed;
+    }
+}

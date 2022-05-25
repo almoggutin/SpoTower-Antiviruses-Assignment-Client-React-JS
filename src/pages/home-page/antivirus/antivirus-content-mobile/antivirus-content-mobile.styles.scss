@@ -1,0 +1,61 @@
+@use '../../../../styles/base' as *;
+
+.antivirus-content-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .product-container {
+        display: flex;
+        justify-content: space-between;
+
+        .images-container {
+            width: 5rem;
+
+            @media (min-width: 36rem) {
+                width: 10rem;
+            }
+
+            img {
+                width: inherit;
+            }
+        }
+
+        .meta-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            width: 8rem;
+
+            @media (min-width: 36rem) {
+                width: 10rem;
+            }
+
+            .ratings-container {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+
+                h1 {
+                    margin: 0;
+
+                    font-size: 3rem;
+                }
+            }
+
+            .compatibility-container.mobile {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .visit-site-btn {
+        @extend %flex-center;
+        gap: 10px;
+
+        width: 100%;
+        height: 3.75rem;
+    }
+}

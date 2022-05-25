@@ -1,0 +1,15 @@
+@use '../../styles/base' as *;
+
+.add-antivirus-page {
+    @extend %flex-center;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+
+    h1 {
+        margin: 0;
+    }
+}

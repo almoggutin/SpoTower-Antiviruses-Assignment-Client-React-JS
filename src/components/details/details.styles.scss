@@ -1,0 +1,20 @@
+@use '../../styles/base' as *;
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    color: #808080;
+
+    .advantages-items {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        .advantages-item {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}

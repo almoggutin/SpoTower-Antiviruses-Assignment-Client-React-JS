@@ -1,0 +1,7 @@
+@use '../../styles/base' as *;
+
+.rating-stars {
+    display: flex;
+    justify-content: space-between;
+    color: $yellow;
+}

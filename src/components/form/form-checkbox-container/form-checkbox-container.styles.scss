@@ -1,0 +1,11 @@
+@use '../../../styles/base' as *;
+
+.form-checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .form-label-checkbox {
+        font-size: 1.2rem;
+    }
+}

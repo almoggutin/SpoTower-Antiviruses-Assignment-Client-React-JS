@@ -1,0 +1,29 @@
+@use '../../styles/base' as *;
+
+.rating-circle {
+    @extend %flex-center;
+
+    width: 8rem;
+    height: 8rem;
+
+    border-radius: 50%;
+
+    background-color: #808080;
+
+    & > div {
+        @extend %flex-center;
+        flex-direction: column;
+
+        width: 7rem;
+        height: 7rem;
+
+        background-color: $white;
+        border-radius: 50%;
+
+        h3,
+        h1 {
+            margin: 0;
+            font-weight: 400;
+        }
+    }
+}

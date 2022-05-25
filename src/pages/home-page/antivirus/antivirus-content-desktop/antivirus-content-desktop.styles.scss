@@ -1,0 +1,43 @@
+@use '../../../../styles/base' as *;
+
+.antivirus-content-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .images-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        width: 8rem;
+
+        img {
+            width: inherit;
+        }
+    }
+
+    .details-container.desktop {
+        align-self: flex-start;
+
+        height: max-content;
+
+        .advantages-item:first-child {
+            font-weight: 700;
+            color: $black;
+        }
+    }
+
+    .ratings-container {
+        @extend %flex-center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .visit-site-btn {
+        width: 100%;
+        max-width: 12rem;
+
+        height: 3.75rem;
+    }
+}
